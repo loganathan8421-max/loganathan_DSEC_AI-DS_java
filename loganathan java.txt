@@ -1,0 +1,155 @@
+                                               PROGRAM 1
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        System.out.println("hello,java!");
+        System.out.println("welcome to programming");
+        System.out.println("my journey starts today");
+    }
+}
+
+
+
+
+                                               PROGRAM2
+
+
+
+public class main{
+    public static void main(String[] args){
+        String college="DSEC";
+        String department="AI&DS";
+        String course="Java programming";
+        System.out.println("college:"+college);
+        System.out.println("department name:"+department);
+        System.out.println("course name:"+course);
+    }
+}
+ 
+                
+                                                PROGRAM3
+
+
+
+public class main{
+    public static void main(String[] args){
+        String a="java is  simple";
+        String b="java is powerful";
+        System.out.print(a);
+         System.out.print(b);
+    }
+}
+
+
+
+
+
+                                                PROGRAM4
+
+
+
+
+public class main{
+    public static void main(String[] args){
+    System.out.println("name:ARUN\ncourse:java\n level:beginner");
+    }
+}
+            
+           
+
+
+                                               PROGRAM-5
+
+
+
+
+
+public class main{
+    public static void main(String[] args){
+    String name="loganthan";
+    int age=21;
+    char grade='A';
+    String placement="java developer";
+    System.out.println("student name:"+name);
+    System.out.println("age:"+age);
+    System.out.println("grade:"+grade);
+    System.out.println("placement status:"+placement);
+    }
+}
+
+
+
+
+                                               PROGRAM-6  
+
+
+
+
+public class main{
+    public static void main(String[] args){
+        int population=8000000;
+        double productprice=1499.95;
+        char bloodgroup='A';
+        boolean account=true;
+        String employee="kavin";
+        System.out.println("population:"+population);
+        System.out.println("product price:"+productprice);
+        System.out.println("blood group symbol:"+bloodgroup);
+        System.out.println("Account verified:"+account);
+        System.out.println("Employee name:"+employee);
+    }
+}
+
+
+
+
+                                                        PROGRAM-7
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        String productName = "Laptop";
+        int productId = 101;
+        double price = 45999.99;
+        boolean availability = true;
+
+        System.out.println("==============================");
+        System.out.println("     PRODUCT INFORMATION");
+        System.out.println("==============================");
+        System.out.println("Product Name : " + productName);
+        System.out.println("Product ID   : " + productId);
+        System.out.println("Price        : Rs. " + price);
+        System.out.println("Available    : " + availability);
+        System.out.println("==============================");
+    }
+}
+        
+
+                                               PROGRAM-8
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+
+        int age = dc.nextInt();
+        dc.nextLine();
+        String city = dc.nextLine();
+
+        System.out.println("Age: " + age);
+        System.out.println("City: " + city);
+
+      
+    }
+}
+
+
+
+            
