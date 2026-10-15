@@ -1,0 +1,294 @@
+							PROGRAM-1
+
+
+import java.util.*;
+public class hello{
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int delayeddays=sc.nextInt();
+    if(delayeddays==0){
+        System.out.println("sorry for the late delivery");
+    
+    }else{
+        System.out.println("thanks for purchasing");
+    }
+    
+}
+
+}
+
+
+							PROGRAM-2
+
+
+
+import java.util.*;
+public class hello{
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    
+    String user=sc.nextLine();
+    if(user.equals("student")){
+        System.out.println("you are eligible for student coupon");
+    }else{
+        System.out.println("not elible for a student coupon");
+    }
+}
+}
+
+
+
+							PROGRAM-3
+
+
+import java.util.*;
+public class hello{
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int vehicletype=sc.nextInt();
+    if(vehicletype==2){
+        System.out.println("parking charge is 20");
+    }else{
+        System.out.println("parking charge is 40");
+    }
+}
+}
+
+
+							PROGRAM-4
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int balance=dc.nextInt();
+        if(balance<1000){
+            System.out.println("low balance alert"+balance);
+        }
+    }
+}
+
+
+						       PROGRAM-5
+    
+        
+       import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int temperature=dc.nextInt();
+        if(temperature>30){
+            System.out.println("warm day"+temperature);
+        }
+        else{
+
+            System.out.println("cool");
+            
+        }
+    }
+}
+
+
+
+						      PROGRAM-6
+
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int number=dc.nextInt();
+        if(number%10==7){
+            System.out.println("lucky ending");
+        }
+       else{
+        System.out.println("not a lucky ending");
+       }
+    }
+}
+
+
+
+
+							  PROGRAM-7
+
+
+
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int bag=dc.nextInt();
+        if(bag>500){
+            System.out.println("free bag is available");
+        }else{
+            System.out.println("no free bag");
+        }
+    }
+}
+
+
+
+
+
+							PROGRAM-8
+
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int marks=dc.nextInt();
+        if(marks<0||marks>100){
+            System.out.println("inavlid marks");
+        }
+        else if(marks>=90){
+            System.out.println("A");
+        }
+        else if(marks>=75){
+            System.out.println("B");
+        }
+        else if(marks>=60){
+            System.out.println("c");
+        }
+        else if(marks>=35){
+            System.out.println("D");
+        }
+        else{
+            System.out.println("fail");
+        }
+    }
+}
+        
+
+
+							PROGRAM-9
+
+
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int units=dc.nextInt();
+        if(units<100){
+            System.out.println("low consumption");
+        }
+        else if(units>=100 && units<200){
+            System.out.println("medium consumption");
+        }
+        else if(units>=200 && units<=300){
+            System.out.println("high consumption");
+        }
+        else if(units>=300){
+            System.out.println("very high consumption");
+        }
+        else 
+            System.out.println("invalid units");
+    }
+}
+
+
+
+
+							PROGRAM-10
+
+
+
+
+import java.util.Scanner;
+
+public class home{
+    public static void main(String[] args){
+        Scanner dc=new Scanner(System.in);
+        int experience=dc.nextInt();
+        if(experience==0){
+            System.out.println("fresher");
+        }
+        else if(experience==1 || experience==2){
+            System.out.println("junior");
+        }
+        else if(experience==3 ||experience==5){
+            System.out.println("intermediate");
+        }
+        else if(experience>5){
+            System.out.println("senior");
+        }
+        else 
+            System.out.println("invalid experience");
+    }
+}
+
+
+
+							PROGRAM-12
+
+
+
+import java.util.Scanner;
+
+public class home {
+    public static void main(String[] args) {
+        Scanner dc = new Scanner(System.in);
+        int num = dc.nextInt();
+
+        switch(num) {
+            case 1:
+                System.out.println("january");
+                break;
+            case 2:
+                System.out.println("february");
+                break;
+            case 3:
+                System.out.println("march");
+                break;
+            case 4:
+                System.out.println("april");
+                break;
+            case 5:
+                System.out.println("may");
+                break;
+            case 6:
+                System.out.println("june");
+                break;
+            case 7:
+                System.out.println("july");
+                break;
+            case 8:
+                System.out.println("august");
+                break;
+            case 9:
+                System.out.println("september");
+                break;
+            case 10:
+                System.out.println("october");
+                break;
+            case 11:
+                System.out.println("november");
+                break;
+            case 12:
+                System.out.println("december");
+                break;
+            default:
+                System.out.println("invalid input");
+        }
+    }
+}
+
+        
+       
+    
+        
+       
