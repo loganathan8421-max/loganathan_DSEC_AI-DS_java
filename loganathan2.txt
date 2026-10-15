@@ -1,0 +1,99 @@
+
+public class main {
+    public static void main(String[] args) {
+        int mark = 20;
+        int eligible = 18;
+
+        String vote = (age >= eligible) ? "Eligible" : "Not eligible";
+
+        System.out.println("You are " + vote + " to vote.");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+public class main {
+    public static void main(String[] args) {
+        int mark= 20;
+        int pass = 18;
+
+        String result = (mark >=pass) ? "passed" : "fail";
+
+        System.out.println("You are " + result );
+    }
+}
+
+
+
+
+
+import java.util.*;
+public class home {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int mark=sc.nextInt();
+        int pass = 18;
+
+        String result = (mark >=pass) ? "passed" : "fail";
+
+        System.out.println("You are " + result );
+    }
+}
+
+
+     
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+
+        int largest=(a>=b&&a>=c)?a:( b>=a&&b>=c)?b:c ;
+        System.out.println("the largest number is:"+largest);
+    }
+}
+
+
+
+
+
+
+
+public class home{
+    public static void main(String[] args){
+        int a=10;
+        String type=(a%2==0)?"even":"odd";
+        System.out.println("the number is"+type);
+    
+    }
+}
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+       int age=sc.nextInt();
+       String eligible=(age>=18)?"eligible to vote":"not eligible to vote";
+       System.out.println(eligible);
+    }
+}
+
+
