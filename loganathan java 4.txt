@@ -1,0 +1,419 @@
+				 		PROGRAM-1
+
+
+
+
+
+public class hello{
+   public static void main(String[] args){
+      
+      for(int i=1;i<=10;i++){
+         System.out.println(i+"*7"+"="+(i*7));
+      
+      }
+
+   }
+}
+
+
+
+						  PRODRAM-2
+
+import java.util.*;
+public class hello{
+   public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int sum=0;
+
+    while(n>0){
+
+        int digit=n%10;
+        sum=sum+digit;
+        n=n/10;
+    }
+    System.out.println("sum of digits"+sum);
+   }
+}
+
+
+
+						PROGRAM-3
+
+
+
+import java.util.*;
+public class hello{
+   public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int gcd=1;
+    int limit=Math.min(a,b);
+    for(int i=1;i<=limit;i++){
+        if(a%i==0 && b%i==0){
+            gcd=i;
+        }
+    }
+    System.out.println("GCD="+gcd);
+   }
+}
+    
+
+
+
+
+						PROGRAM-4
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int reverse=0;
+        int orginal=n;
+        while(n>0){
+            int digit=n%10;
+            reverse=reverse*10+digit;
+            n=n/10;
+        }
+        System.out.println("reverse="+reverse);
+        if(orginal==reverse){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.println("Enter a number:");
+        if(a>0){
+            System.out.println("positive value");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a%2==0){
+            System.out.println("even number:"+a);
+        }else{
+            System.out.println("odd number:"+a);
+        }
+    }
+}
+        
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int mark=sc.nextInt();
+        System.out.println("enter your mark:"+mark);
+        if(mark<0 || mark>100){
+            System.out.println("invalid marks"+mark);
+        }else if(mark>=90){
+            System.out.println("o grade"+mark);
+        }else if(mark>=75){
+            System.out.println("A+ grade"+mark);
+        }else if(mark>=60){
+            System.out.println("B grade"+mark);
+        }else if(mark>=50){
+            System.out.println("C grade"+mark);
+        }else{
+            System.out.println("you fail");
+        }
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        if(num1%3==0 && num2%5==0){
+            System.out.println("divisible by 3 and 5");
+        }else{
+            System.out.println("not divisible");
+        }
+    }
+}
+        
+       
+      
+        
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int run=sc.nextInt();
+        
+        if(run<0 && run>150){
+            System.out.println("invalid run");
+        }if(run>1 && run<20){
+            System.out.println("improve your skills");
+        }if(run>21 && run<50){
+            System.out.println("stay consistent");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int day=sc.nextInt();
+        switch(day){
+            case 1:
+                System.out.println("sunday");
+                break;
+            case 2:
+                System.out.println("monday");
+                break;
+            case 3:
+                System.out.println("tuesday");
+                break;
+             case 4:
+                System.out.println("wednesday");
+                break;
+             case 5:
+                System.out.println("thursday");
+                break;
+             case 6:
+                System.out.println("friday");
+                break;
+             case 7:
+                System.out.println("saturday");
+                break;
+        default:
+            System.out.println("invalid choice");
+        }
+    }
+}
+
+        
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int choice=sc.nextInt();
+        System.out.println("enter your choice");
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        switch(choice){
+            case 1:
+                System.out.println(num1+num2);
+                break;
+            case 2:
+                System.out.println(num1-num2);
+                break;
+            case 3:
+                System.out.println(num1*num2);
+                break;
+             case 4:
+                System.out.println(num1/num2);
+                break;
+             case 5:
+                System.out.println(num1%num2);
+                break;
+            
+        default:
+            System.out.println("invalid choice");
+        }
+
+
+
+
+
+import java.util.Scanner;
+
+public class home {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int balance = 5000;
+        int choice;
+
+        do {
+            System.out.println("\n===== ATM MENU =====");
+            System.out.println("1. Check Balance");
+            System.out.println("2. Deposit Money");
+            System.out.println("3. Withdraw Money");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Current Balance = Rs." + balance);
+                    break;
+
+                case 2:
+                    System.out.print("Enter deposit amount: ");
+                    int deposit = sc.nextInt();
+
+                    if (deposit > 0) {
+                        balance = balance + deposit;
+                        System.out.println("Deposit successful!");
+                        System.out.println("New Balance = Rs." + balance);
+                    } else {
+                        System.out.println("Invalid deposit amount");
+                    }
+                    break;
+
+                case 3:
+                    System.out.print("Enter withdrawal amount: ");
+                    int withdraw = sc.nextInt();
+
+                    if (withdraw > 0 && withdraw <= balance) {
+                        balance = balance - withdraw;
+                        System.out.println("Withdrawal successful!");
+                        System.out.println("New Balance = Rs." + balance);
+                    } else {
+                        System.out.println("Invalid amount or insufficient balance");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Thank you for using ATM!");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+
+        } while (choice != 4);
+
+        
+    }
+}
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter a number:");
+       int n=sc.nextInt();
+       for (int i=1,i <= n; i++) {
+        System.out.println(i);
+       }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        int i=20;
+        for(i=1;i<=20;i++){
+            if(i%2==0){
+            System.out.println(i);
+            }
+        }
+    }
+}
+
+            
+        
+    
+     
+        
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int num=sc.nextInt();
+        for(i=1;i<=10;i++){
+            System.out.println(i+"*"+"="+(num*i));
+        }
+    }
+}
+        
+          
+       
+        
+        
