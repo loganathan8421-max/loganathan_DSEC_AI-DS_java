@@ -1,0 +1,323 @@
+
+							PRIME NUMBER
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        for (int i=1;i<=n;i++){
+            if(n%i==0){
+                count++;
+
+            }
+        }
+        if(count==2){
+            System.out.println("prime number");
+        }else{
+            System.out.println("not a prime number");
+        }
+    }
+}
+
+
+
+							PERFECT NUMBER
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<n;i++){
+            if(n%i==0){
+                sum=sum+i;
+
+            }
+        }if(sum == n){
+            System.out.println("perfect  number");
+        }else{
+            System.out.println("not a perfect number");
+        }
+    }
+}
+
+
+
+
+
+							ARMSTRONG NUMBER
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=n;
+        for(int i=1;i<=n;i++){
+            if(n%10==0){
+                sum=sum+n*n*n;
+
+            }
+        }if(sum == n){
+            System.out.println("armstrong  number");
+        }else{
+            System.out.println("not a armstrong number");
+        }
+    }
+}
+
+
+
+							NEON NUMBER
+
+
+
+
+
+
+import java.util.*;
+public class home{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int square=n*n;
+        int sum=0;
+        int temp=square;
+        while(temp>0){
+            sum+=temp%10;
+            temp/=10;
+        }
+        if(sum==n){
+            System.out.println(n+" is a Neon number");
+        }else{
+            System.out.println(n+" is not a Neon number");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print("*");
+                    }
+            System.out.println();
+        }
+    }
+}
+    
+
+
+
+
+
+
+
+
+    
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=3;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i[1,1]){
+                    System.out.print();
+                }
+                System.out.print("*");
+            }
+        }
+    }
+}
+    
+
+
+
+
+
+    
+
+
+
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                System.out.print("*");
+                    }
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+import java.util.*;
+public class main{
+    public static void main(String[] args){
+        
+        int n=3;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i[1,1]){
+                    System.out.print();
+                }
+                System.out.print("*");
+            }
+        }
+    }
+}
+    
+    
+
+								SPY NUMBER
+
+
+
+
+
+
+
+import java.util.*;
+
+public class home {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n;
+        int sum = 0;
+        int product = 1;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+
+            sum = sum + digit;
+            product = product * digit;
+
+            temp = temp / 10;
+        }
+
+        if (sum == product) {
+            System.out.println(n + " is a Spy Number");
+        } else {
+            System.out.println(n + " is not a Spy Number");
+        }
+
+        
+    }
+}
+
+
+
+
+        
+    
+        
+    
+
+            
+        
+        
+
+
+        
+    
+
+            
+        
+        
+
+
+        
+    
+
+   
