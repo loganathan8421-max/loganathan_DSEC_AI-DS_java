@@ -1,0 +1,296 @@
+							BUBBLE SORT
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args){
+        int a[]={40,10,30,20};
+        for(int i=0;i<a.length-1;i++){
+            for(int j=0;j<a.length-1-i;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+
+
+SELECTION SORT
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args){
+        int a[]={40,10,30,20};
+        for(int i=0;i<a.length-1;i++){
+            int min=i;
+            for(int j=i+1;j<a.length;j++){
+                if(a[j]<a[min]){
+                    min=j;
+                }
+            }
+                    int temp=a[i];
+                    a[i]=a[min];
+                    a[min]=temp;
+        }for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class hello {
+    public static void main(String[] args) {
+
+        int a[] = {40, 10, 30, 20};
+
+        System.out.println("Initial Array:");
+        printArray(a);
+
+        for (int i = 0; i < a.length - 1; i++) {
+
+            int min = i;
+
+            System.out.println("\nPass " + (i + 1));
+            System.out.println("Starting minimum: a[" + min + "] = " + a[min]);
+
+            for (int j = i + 1; j < a.length; j++) {
+
+                System.out.println("Comparing " + a[j] + " with " + a[min]);
+
+                if (a[j] < a[min]) {
+                    min = j;
+
+                    System.out.println("New minimum found: " + a[min]);
+                }
+            }
+
+            System.out.println("Minimum element: " + a[min]);
+            System.out.println("Swapping " + a[i] + " and " + a[min]);
+
+            int temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+
+            System.out.print("Array after Pass " + (i + 1) + ": ");
+            printArray(a);
+        }
+
+        System.out.print("\nFinal Sorted Array: ");
+        printArray(a);
+    }
+
+    static void printArray(int a[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args){
+        int a[]={40,10,30,20};
+        for(int i=1;i<a.length;i++){
+            int key=a[i];
+            int j=i-1;
+            while(j>=0&&a[j]>key){
+                a[j+1]=a[j];
+                j--;
+            }
+            a[j+1]=key;
+        }
+        for(int i=0;i<a.length;i++){
+        System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a[][]=new int[2][2];
+        int b[][]=new int[2][2];
+        int c[][]=new int[2][2];
+        
+
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+            b[i][j]=sc.nextInt();
+        }
+        }
+        for(int i=0;i<2;i++){
+            for(int j=0;j<2;j++){
+                c[i][j]=a[i][j]+b[i][j];
+            }
+        }
+        System.out.println(c[i][j]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a[][]=new int[3][3];
+        int sum=0;
+
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<3;i++){
+            sum=sum+a[i][i];
+        }
+        System.out.println("diagonal sum:"+sum);
+    }
+}
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello {
+    public static void main(String[] args) {
+        int a[] = {10, 20, 30, 40, 50};
+
+        int first = a[0];
+
+        for (int i = 0; i < a.length - 1; i++) {
+            a[i] = a[i + 1];
+        }
+
+        a[a.length - 1] = first;
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+
+
+
+
+
+
+import java.util.*;
+
+public class hello{
+    public static void main(String[] args) {
+        int a[] = {10, 20, 30, 40, 50};
+
+        int last = a[a.length - 1];
+
+        for (int i = a.length - 1; i > 0; i--) {
+            a[i] = a[i - 1];
+        }
+
+        a[0] = last;
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+
+    
+
+      
+
+      
